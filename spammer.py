@@ -2,9 +2,8 @@ from pynput.keyboard import Key,Controller
 import keyboard as key2 
 import time
 
-    
-
-message = "Your text to spam"
+message = input('enter message: ')
+sleep = int(input("sleep: "))
 count  = -1
 keyboard = Controller()
 time.sleep(5)
@@ -22,4 +21,4 @@ while True:
         print (count)
     keyboard.press(Key.enter)
     keyboard.release(Key.enter)
-    time.sleep(0.1)
+    time.sleep(sleep)
